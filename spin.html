@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/spin.css">
+    <link rel="stylesheet" href="resources/css/directory.css">
+    <script src="https://kit.fontawesome.com/9c9978f0e5.js" crossorigin="anonymous"></script>
+    <title> Wheel of Fortune </title>
+</head>
+
+<body>
+    <!--
+        Background pattern attribution: <a href="https://www.vecteezy.com/free-vector/cute-blue-background">Cute Blue Background Vectors by Vecteezy</a>
+    -->
+    <!-- Sidebar -->
+    <div class="directory">
+        <h2 id="sidebar-heading">Directory</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="type.html">Typing Speed</a></li>
+            <li><a href="spin.html">Spin the Wheel</a></li>
+            <li><a href="mole.html">Whack A Bear</a></li>
+        </ul>
+    </div>
+
+    <!-- The Wheel -->
+    <!--
+        Instructions:
+        A simple game: enter your question and our totally legit fortune teller will give you
+        a perfect response 
+        (we are not liable for potential harm, feelings hurt, or results)
+    -->
+
+    <div class="container">
+            <div class="wheel">
+                <div id="sec1"><b>It is certain</b></div>
+                <div id="sec2"><b>As I see it, <br>yes</b></div>
+                <div id="sec3"><b>Ask again later</b></div>
+                <div id="sec4"><b>Better not <br> tell you now</b></div>
+                <div id="sec5"><b>Ask again <br>later</b></div>
+                <div id="sec6"><b>Outlook not <br>so good</b></div>
+                <div id="sec7"><b>Very <br>doubtful</b></div>
+                <div id="sec8"><b>My reply is <br> a no</b></div>
+                <button id="spinBttn" onclick="prepareSpin()">Spin!</button>
+        </div>
+        <div class="arrow">arrow</div>
+    </div>
+
+    <div class="questionBox">
+        <br><br><br><br><textarea id="question" rows="1" placeholder="Ask a question!"></textarea><br><br><br>
+    </div>
+    
+</body>
+
+<footer>
+    <div>
+        <h4>2024 &copy Copyright. Typing Game edited from <a href="https://github.com/WebDevSimplified/JS-Speed-Typing-Game/tree/master"><u>WebDevSimplified</u></a></h4>
+    </div>
+    <script src="resources/js/spin.js"></script>
+</footer>
+
+</html>

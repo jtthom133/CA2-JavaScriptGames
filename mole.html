@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        This game is a rendition of whack a mole, featuring the teddy bear Kenny!
+        Keep the board from filling up with Kennys. If all 9 squares are filled, game over!
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9c9978f0e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="resources/css/directory.css">
+    <link rel="stylesheet" href="resources/css/mole.css">
+    <title>Whack a Kenny</title>
+</head>
+<body>
+
+    <!-- SideBar-->
+    <div class="directory">
+        <h2 id="sidebar-heading">Directory</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="type.html">Typing Speed</a></li>
+            <li><a href="spin.html">Spin the Wheel</a></li>
+            <li><a href="mole.html">Whack A Bear</a></li>
+        </ul>
+    </div>
+
+    <!-- Whack a Bear -->
+    <!--
+        Instructions for the front page:
+        Click the arrow to start. The bear will start filling up the squares, so click 
+        any occupied square to get rid of him. Keep him out for the full 30 seconds!
+        If Kenny fills up all 9 spaces, game over!
+        You can restart at any time.
+    -->
+    <div class="container">
+        <h1 id="title">Whack a Bear!</h1>
+        <h2 id="gameOver"></h2>
+        <div class="statsBox">
+            <div class="statsTitles">Time Left: <span id="timer">30</span>s</div>
+            <div class="statsTitles">Score: <span id="score">0</span></div>
+        </div>
+
+        <div class="playingField">
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+            <div class="box" id="box6"></div>
+            <div class="box" id="box7"></div>
+            <div class="box" id="box8"></div>
+            <div class="box" id="box9"></div>
+        </div>
+        <button id="startBtn" onclick="startGame()"><i class="fa-solid fa-rotate-right"></i></button>
+    </div>
+</body>
+
+<footer>
+    <div>
+        <h4>2024 &copy Copyright. Typing Game edited from <a href="https://github.com/WebDevSimplified/JS-Speed-Typing-Game/tree/master"><u>WebDevSimplified</u></a></h4>
+    </div>
+    <script src="resources/js/mole.js"></script>
+</footer>
+</html>

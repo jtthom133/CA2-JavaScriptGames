@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/index.css">
+    <script src="https://kit.fontawesome.com/9c9978f0e5.js" crossorigin="anonymous"></script>
+    <title> JavaScript Mini Games for ECS162 </title>
+</head>
+
+<body>
+    <!--
+        Background pattern attribution: <a href="https://www.vecteezy.com/free-vector/pastel-purple">Pastel Purple Vectors by Vecteezy</a>
+    -->
+
+    <!-- Sidebar -->
+    <div class="directory">
+        <h2 id="sidebar-heading">Directory</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="type.html">Typing Speed</a></li>
+            <li><a href="spin.html">Spin the Wheel</a></li>
+            <li><a href="mole.html">Whack A Bear</a></li>
+        </ul>
+    </div>
+
+     <!-- Home Page -->
+    <div class="home">
+        <h1 id="home-heading">JavaScript Games!</h1>
+        <p class="container home-text">
+            This is the homepage! Use the sidebar to navigate through the games. There's a typing speed test, the Wheel
+            of truth, and Whack a Mole (teddy bear edition).
+            Let me know if there are any bugs! <br>
+            Below are instructions and applicable info.
+        </p>
+        <h1 id="home-heading">Instructions</h1>
+        <div class="container">
+            <div class="home-text">
+                <br> <h3>Spin the Wheel</h3>
+                <img class="images" alt="My Wheel Game" title="My Wheel Game" src="resources/images/image2.png"> <br>
+                A simple game: enter your question and our totally legit fortune teller will give you
+                a perfect response <br> 
+                (we are not liable for potential harm, feelings hurt, or results)<br>
+            </div>
+            <div class="home-text">
+                <br> <h3>Typing Speed</h3>
+                Test your typing speed with cool quotes!
+                The engine will keep running until time runs out, or
+                your most recent input matches the quote's last character, at the right spot.
+                (for the tech-ers, it's matching array index values) <br>
+                <br><br>
+                <b>wpm</b>: adjusts your speed to account for accuracy. <br>
+                (your average words / time taken) - mistakes, normalized to minutes <br><br>
+        
+                <b>raw wpm</b>: your true speed <br>
+                (your average words) / time taken, normalized to minutes <br><br>
+        
+                <b>accuracy</b>: <br>
+                total correct characters / total characters <br><br>
+        
+                <b>Credits</b>: <br>
+                Quotes API/fetch, and correctness checker code from <a href="https://github.com/WebDevSimplified/JS-Speed-Typing-Game/tree/master"><u>WebDevSimplified</u></a><br> <br>
+            </div>
+
+            <div class="home-text">
+                <br> <h3>Whack a Bear</h3>
+                <img class="images" alt="Whack a Bear Image" title="Whack a Bear Image" src="resources/images/image3.png"> <br>
+                <br>Click the arrow to start. <br>Kenny will start filling up the squares, so click 
+                any occupied square to get rid of him. Keep him out for the full 30 seconds! <br>
+                If Kenny fills up all 9 spaces, game over!<br>
+                You can restart at any time.<br>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+    
+<footer>
+    <div>
+        <h4>2024 &copy Copyright. Typing Game edited from <a href="https://github.com/WebDevSimplified/JS-Speed-Typing-Game/tree/master"><u>WebDevSimplified</u></a></h4>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,203 @@
+.questionBox{
+    position: relative;
+    width: 30%;
+    left: 43%;
+}
+
+#question{
+    font-size: 15px;
+    width: 100%;
+    resize: none;
+}
+
+.container{
+    align-items: center;
+}
+
+.wheel {
+    position: relative;
+    left: 40%; 
+    width: 500px;
+    height: 500px;
+    border: 5px solid white;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 4s;
+}
+
+.wheel div {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 0px;
+    top: 25%;
+    clip-path: polygon(0 90%, 100% 50%, 0 10%);
+    transform-origin: center;
+}
+
+#sec1{
+    background-color: #DE638A;
+}
+
+#sec2 {
+    transform: rotate(45deg);
+    width: 60%;
+    height: 60%;
+    top: 0%;
+    left: 0%;
+    background-color: #F7B9C4;
+}
+
+#sec3 {
+    left: 25%;
+    top: 0%;
+    transform: rotate(90deg);
+    background-color: #FDF375;
+}
+
+#sec4 {
+    width: 60%;
+    height: 60%;
+    left: 40%;
+    top: 0%;
+    transform: rotate(135deg);
+    background-color: #42D5F9;
+}
+
+#sec5 {
+    left: 51%;
+    top: 25%;
+    transform: rotate(180deg);
+    background-color: #DE638A;
+} 
+
+#sec6 {
+    width: 60%;
+    height: 60%;
+    left: 39%;
+    top: 39%;
+    transform: rotate(225deg);
+    background-color: #F7B9C4;
+} 
+
+#sec7 {
+    width: 60%;
+    height: 60%;
+    left: 19%;
+    top: 49%;
+    transform: rotate(270deg);
+    background-color: #FDF375;
+} 
+
+#sec8 {
+    width: 58%;
+    height: 58%;
+    left: 0%;
+    top: 41%;
+    transform: rotate(315deg);
+    background-color: #42D5F9;
+} 
+
+#spinBttn{
+    position: absolute;
+    left: 42%;
+    top: 43%;
+    padding: 10px;
+    height: 13%;
+    border-radius: 50%;
+    background-color: #09ACDD;
+    border: solid 2px white;
+    font-size: 20px;
+    color: white;
+}
+
+#spinBttn:hover {
+    background-color: #B6A19E;
+    cursor: pointer;
+}
+
+.wheel div b{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 0px;
+    top: 25%;   
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    color: #43272ad3;
+}
+
+.arrow{
+    position: absolute;   
+    left: 35%;
+    top: 30%;
+    transform-origin: center;
+
+    clip-path: polygon(0 100%, 0 0, 100% 50%);
+    color: white;
+    background-color: rgb(255, 255, 255);
+}
+
+footer{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .arrow{
+        left: 30%;
+        top: 15%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .wheel {
+        width: 400px;
+        height: 400px;
+    }
+    #spinBttn{
+        height: 16%;
+        font-size: 20px;
+    }
+    .arrow {
+        left: 30%;
+        top: 25%;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    .wheel {
+        width: 300px;
+        height: 300px;
+    }
+    #spinBttn{
+        height: 16%;
+        font-size: 10px;
+    }
+    .arrow {
+        left: 30%;
+        top: 15%;
+    }
+}
+
+@media only screen and (max-width: 400) {
+    .wheel {
+        width: 300px;
+        height: 300px;
+    }
+    #spinBttn{
+        height: 16%;
+        font-size: 10px;
+    }
+    .arrow {
+        left: 30%;
+        top: 30%;
+    }
+}

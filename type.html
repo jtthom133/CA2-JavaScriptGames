@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/type.css">
+    <link rel="stylesheet" href="resources/css/directory.css">
+    <script src="https://kit.fontawesome.com/9c9978f0e5.js" crossorigin="anonymous"></script>
+    <title> Typing Game </title>
+</head>
+
+<body>
+    <!--
+        Background pattern attribution: <a href="https://www.vecteezy.com/free-vector/cute-blue-background">Cute Blue Background Vectors by Vecteezy</a>
+    -->
+
+    <!-- Sidebar -->
+    <div class="directory">
+        <h2 id="sidebar-heading">Directory</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="type.html">Typing Speed</a></li>
+            <li><a href="spin.html">Spin the Wheel</a></li>
+            <li><a href="mole.html">Whack A Bear</a></li>
+        </ul>
+    </div>
+    <!-- Typing Test -->
+    <!--
+        Instructions:
+        Test your typing speed with cool quotes!
+        The engine will keep running until time runs out, or
+        your most recent input matches the quote's last character, at the right spot.
+        (for the tech-ers, it's matching array index values)
+        It will take into account all of your mistakes and time and calculate wpm, raw wpm, and accuracy.
+
+        wpm: adjusts your speed to account for accuracy.
+        (your average words / time taken) - mistakes, normalized to minutes
+
+        raw wpm: your true speed
+        (your average words) / time taken, normalized to minutes
+
+        accuracy:
+        total correct characters / total characters
+
+        Credits:
+        Quotes API, fetch, and basic color matching logic from WebDev (github)
+    -->
+
+    <section class="container">
+        <h1>Typing Test</h1>
+
+        <div class="timer">
+            <p class="header">Time: <span id="countTimer"></span></span></p> </p>
+        </div>
+
+        <div id="quote"></div><br>
+        <textarea id="input" rows="5" placeholder="Type here..."></textarea>
+
+        <button onclick="displayQuote()" id="startBtn"><i class="fa-solid fa-rotate-right"></i></button>
+
+        <div id="wrapper">
+            <div id="results">
+                <div class="wpm">
+                    <p class="header">wpm</p>
+                    <p id="wpmResult">0</p>
+                </div>
+    
+                <div class="rawpm">
+                    <p class="header">raw-wpm</p>
+                    <p id="rawpmResult">0</p>
+                </div>
+    
+                <div class="mistakes">
+                    <p class="header">mistakes</p>
+                    <p id="mistResult">0</p>
+                </div>
+    
+                <div class="acc">
+                    <p class="header">acc</p>
+                    <p id="accResult">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+</body>
+
+<footer>
+    <div>
+        <h4>2024 &copy Copyright. Typing Game edited from <a href="https://github.com/WebDevSimplified/JS-Speed-Typing-Game/tree/master"><u>WebDevSimplified</u></a></h4>
+    </div>
+    <script src="resources/js/script.js"></script>
+</footer>
+
+</html>
