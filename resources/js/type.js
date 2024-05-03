@@ -5,7 +5,7 @@
 // Accessed: 4/25-5/3
 // His tutorial: https://www.youtube.com/watch?v=R-7eQIHRszQ&t=863s
 // I restyled and added features for my game. 
-// All code which was not mine is clearly marked. I am not their owner whatsoever. 
+// All code which was not mine is clearly marked. I am not their owner. 
 
 const randQuote = 'https://api.quotable.io/random';
 const quoteElement = document.getElementById("quote");
@@ -58,6 +58,7 @@ async function displayQuote() {
 }
 
 // Pretty much the entire function is WebDevSimplified's code
+// I modified some parts to fit my additional features
 typedElement.addEventListener('input', function() {
     let arrQuote = quoteElement.querySelectorAll('span');
     let arrInput = typedElement.value.split("");
