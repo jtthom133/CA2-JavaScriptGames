@@ -1,5 +1,11 @@
-// https://www.tutorialspoint.com/how-to-build-a-random-quote-generator-using-html-css-and-javascript
-// https://github.com/WebDevSimplified/JS-Speed-Typing-Game/blob/master/script.js
+//WebDevSimplified made much of the logic in this code.
+// Typing Game: Much of its core logic is from WebDevSimplified (github and Youtube) 
+// https://github.com/WebDevSimplified/JS-Speed-Typing-Game/tree/master
+// His project title: JS-Speed-Typing-Game
+// Accessed: 4/25-5/3
+// His tutorial: https://www.youtube.com/watch?v=R-7eQIHRszQ&t=863s
+// I restyled and added features for my game. 
+// All code which was not mine is clearly marked. I am not their owner whatsoever. 
 
 const randQuote = 'https://api.quotable.io/random';
 const quoteElement = document.getElementById("quote");
@@ -18,7 +24,7 @@ let rawpm = 0;
 let wpm = 0;
 let acc = 0;
 
-// Random quote generator idea from Web Dev Simplified
+// LINES 21 TO 30 ARE FROM WEBDEVSIMPLIFIED (see main html and above for more details)
 function getQuote() {
     return fetch(randQuote)
     .then(function(response){
@@ -38,9 +44,7 @@ async function displayQuote() {
     let myQuote = await getQuote();
     console.log(myQuote);
     quoteElement.innerHTML = ''
-    // For each character, checking if it matches our input
-    // Split: creates an array of each character resulted from split
-    // forEach: runs the function for each character
+    // LINES 45 TO 54 ARE FROM WEBDEVSIMPLIFIED (see main html and above for more details)
     myQuote.split('').forEach(function(char) {
         // Each character has to be styled, and can only be styled with span
         // create a span for each character
@@ -53,6 +57,7 @@ async function displayQuote() {
     interID = setInterval(countdown, 1000);
 }
 
+// Pretty much the entire function is WebDevSimplified's code
 typedElement.addEventListener('input', function() {
     let arrQuote = quoteElement.querySelectorAll('span');
     let arrInput = typedElement.value.split("");
@@ -77,7 +82,6 @@ typedElement.addEventListener('input', function() {
     })
         if(complete) {
             mistakes = document.querySelectorAll('.wrong').length;
-            //numChar = arrInput.length;
             showResults();
         }
 })
@@ -104,7 +108,6 @@ function showResults() {
     mistElement.innerHTML = mistakes;
     accElement.innerHTML = acc;
     resultElement.style.display = "block";
-    //resultElement.classList.add('resultsClass');
 } 
 
 function hideResults() {
